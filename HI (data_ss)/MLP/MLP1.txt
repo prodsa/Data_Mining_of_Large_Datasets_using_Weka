@@ -1,0 +1,642 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a -G -R
+Relation:     HI-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R1-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R8-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R9-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R10-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R11-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R13-precision6-weka.filters.unsupervised.attribute.Remove-R13
+Instances:    22272
+Attributes:   12
+              whrswk
+              hhi
+              whi
+              hhi2
+              education
+              race
+              hispanic
+              experience
+              kidslt6
+              kids618
+              husby
+              region
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -0.8283684908024951
+    Node 2    0.6551656344693753
+    Node 3    0.7181818342937293
+    Node 4    1.6139498586618324
+    Node 5    0.9196762321138019
+    Node 6    0.97510192140664
+    Node 7    1.0340846197799654
+    Node 8    -1.0671854705195705
+    Node 9    1.3564608236804503
+    Node 10    0.8676718027742052
+    Node 11    0.9890792102243935
+    Node 12    1.3067135759395905
+    Node 13    -1.488795436897319
+    Node 14    2.3617030492221773
+    Node 15    1.5427217315882855
+    Node 16    0.8487521774268452
+    Node 17    1.3665999038513075
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    0.8283684908024946
+    Node 2    -0.6551656344693756
+    Node 3    -0.7181818342937294
+    Node 4    -1.6139498586618337
+    Node 5    -0.919676232113802
+    Node 6    -0.9751019214066394
+    Node 7    -1.0340846197799656
+    Node 8    1.0671854705195714
+    Node 9    -1.3564608236804498
+    Node 10    -0.867671802774205
+    Node 11    -0.9890792102243935
+    Node 12    -1.3067135759395898
+    Node 13    1.4887954368973186
+    Node 14    -2.3617030492221427
+    Node 15    -1.5427217315883017
+    Node 16    -0.8487521774268453
+    Node 17    -1.3665999038513073
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -1.9593869173737815
+    Attrib whrswk=0_30    0.9046679233077874
+    Attrib whrswk=31_60    -3.1713338853407533
+    Attrib whrswk=61_max    4.138126955342711
+    Attrib hhi=yes    5.980600968761382
+    Attrib hhi2=yes    -0.9027713801384112
+    Attrib education=13-15years    5.636131907739574
+    Attrib education=12years    -0.5201042762661894
+    Attrib education=9-11years    -0.8425150980158298
+    Attrib education=16years    3.267550196884272
+    Attrib education=>16years    -0.1357809584675607
+    Attrib education=<9years    0.46210901835154716
+    Attrib race=white    1.1617913347706352
+    Attrib race=black    -1.3715954164805613
+    Attrib race=other    2.221238257649843
+    Attrib hispanic=yes    -4.217907749241167
+    Attrib experience=0_16    0.19284237361614467
+    Attrib experience=17_33    -1.1223244518724385
+    Attrib experience=34_max    2.873097698190286
+    Attrib kidslt6=0_1    -0.511669084647841
+    Attrib kidslt6=2_3    0.15389594171895463
+    Attrib kidslt6=4_max    2.275648717124423
+    Attrib kids618=0_2    0.633629629168777
+    Attrib kids618=3_5    -0.6916056450929671
+    Attrib kids618=6_max    1.9842191538148097
+    Attrib husby=0_61    -1.2194407689024764
+    Attrib husby=62_122    1.051017466355224
+    Attrib husby=123_max    2.0752230156257583
+    Attrib region=northcentral    0.4742185237486392
+    Attrib region=other    4.725721003438058
+    Attrib region=south    -0.2517716091398949
+    Attrib region=west    -1.166949889297337
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -1.478281281862567
+    Attrib whrswk=0_30    2.0872996881519854
+    Attrib whrswk=31_60    -0.9635941556500426
+    Attrib whrswk=61_max    0.3883163148179785
+    Attrib hhi=yes    1.5013173922601022
+    Attrib hhi2=yes    2.853014330335872
+    Attrib education=13-15years    -0.27332941353599643
+    Attrib education=12years    0.6479318083597242
+    Attrib education=9-11years    6.8692179581215616
+    Attrib education=16years    -3.3406142032675774
+    Attrib education=>16years    -5.575615291479402
+    Attrib education=<9years    7.454542937336136
+    Attrib race=white    -0.6386083526360252
+    Attrib race=black    1.5628214841931547
+    Attrib race=other    0.5460685324035847
+    Attrib hispanic=yes    -4.839091469737539
+    Attrib experience=0_16    3.991421666028224
+    Attrib experience=17_33    0.9464398152925965
+    Attrib experience=34_max    -3.604435430156378
+    Attrib kidslt6=0_1    0.17837620061512424
+    Attrib kidslt6=2_3    -1.9199283447430706
+    Attrib kidslt6=4_max    3.1409962099210436
+    Attrib kids618=0_2    -2.8602927724067415
+    Attrib kids618=3_5    3.67738297999638
+    Attrib kids618=6_max    0.6385709875924054
+    Attrib husby=0_61    2.2692116311360255
+    Attrib husby=62_122    -2.2619332512617634
+    Attrib husby=123_max    1.4907330604323472
+    Attrib region=northcentral    3.7984674773099965
+    Attrib region=other    -0.08986843397995269
+    Attrib region=south    -1.2400286957358997
+    Attrib region=west    0.465055134846395
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -1.7218967539763075
+    Attrib whrswk=0_30    5.721334077721051
+    Attrib whrswk=31_60    -2.554517629749598
+    Attrib whrswk=61_max    -1.4798614410657192
+    Attrib hhi=yes    1.58818266544685
+    Attrib hhi2=yes    -0.8544966281297534
+    Attrib education=13-15years    -0.4856444937528943
+    Attrib education=12years    -2.689719568318288
+    Attrib education=9-11years    1.29023610896001
+    Attrib education=16years    3.0099406236503907
+    Attrib education=>16years    0.583290351941164
+    Attrib education=<9years    5.14469272599708
+    Attrib race=white    1.1599356224705328
+    Attrib race=black    -0.9971298957961527
+    Attrib race=other    1.5568742612486781
+    Attrib hispanic=yes    1.6800646131972643
+    Attrib experience=0_16    -6.312493753014181
+    Attrib experience=17_33    5.721217277518255
+    Attrib experience=34_max    2.294076954269228
+    Attrib kidslt6=0_1    -1.5827863495607244
+    Attrib kidslt6=2_3    1.3694853773996236
+    Attrib kidslt6=4_max    1.8458953699445202
+    Attrib kids618=0_2    -0.15152663348801332
+    Attrib kids618=3_5    -0.7944640154227456
+    Attrib kids618=6_max    2.6625500037018366
+    Attrib husby=0_61    -3.28344352986111
+    Attrib husby=62_122    2.908722782360854
+    Attrib husby=123_max    2.036881640250629
+    Attrib region=northcentral    3.456887736368607
+    Attrib region=other    -1.219891648254775
+    Attrib region=south    1.4997753659510928
+    Attrib region=west    -0.3380492279419666
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -0.41177448244348
+    Attrib whrswk=0_30    1.9345870692970428
+    Attrib whrswk=31_60    -0.5335917800267229
+    Attrib whrswk=61_max    -0.9658603355557562
+    Attrib hhi=yes    5.76896166278908
+    Attrib hhi2=yes    -2.661755791701459
+    Attrib education=13-15years    0.12436860147541257
+    Attrib education=12years    0.5875368023454522
+    Attrib education=9-11years    5.116573153224708
+    Attrib education=16years    1.6652281804435716
+    Attrib education=>16years    -3.6140799390273415
+    Attrib education=<9years    -2.3651808836080312
+    Attrib race=white    -1.721108134218512
+    Attrib race=black    -2.5071740585501616
+    Attrib race=other    4.603156660586757
+    Attrib hispanic=yes    1.4407439651975933
+    Attrib experience=0_16    -2.419040119622177
+    Attrib experience=17_33    -0.1428257253309541
+    Attrib experience=34_max    2.812921728412517
+    Attrib kidslt6=0_1    -0.366784414089118
+    Attrib kidslt6=2_3    0.31628780959630254
+    Attrib kidslt6=4_max    0.37112793616019835
+    Attrib kids618=0_2    -2.2869024184697273
+    Attrib kids618=3_5    1.7478982461234933
+    Attrib kids618=6_max    0.8418197912640213
+    Attrib husby=0_61    -0.912492605611374
+    Attrib husby=62_122    0.9045371035957713
+    Attrib husby=123_max    0.45397280379582533
+    Attrib region=northcentral    2.599100862401796
+    Attrib region=other    -3.0140025088422284
+    Attrib region=south    3.5777749749746595
+    Attrib region=west    -2.4378384454493496
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -1.0601225466094126
+    Attrib whrswk=0_30    5.7808266244403015
+    Attrib whrswk=31_60    -5.924151011534759
+    Attrib whrswk=61_max    1.2103468167254536
+    Attrib hhi=yes    -0.29035701011639525
+    Attrib hhi2=yes    -3.219818237543833
+    Attrib education=13-15years    -2.1469835051598563
+    Attrib education=12years    0.4933278973482148
+    Attrib education=9-11years    4.6937632579257285
+    Attrib education=16years    -4.045127339834122
+    Attrib education=>16years    -0.11456175522696448
+    Attrib education=<9years    5.470744451934823
+    Attrib race=white    -2.1744266740932674
+    Attrib race=black    1.344407143864351
+    Attrib race=other    1.8824073624138016
+    Attrib hispanic=yes    2.968871377015055
+    Attrib experience=0_16    1.1526633498055776
+    Attrib experience=17_33    3.081945838510447
+    Attrib experience=34_max    -3.172853551693038
+    Attrib kidslt6=0_1    -1.7569893064109259
+    Attrib kidslt6=2_3    1.2381221227979533
+    Attrib kidslt6=4_max    1.559374917938853
+    Attrib kids618=0_2    -0.9058451617127081
+    Attrib kids618=3_5    0.7735567315952094
+    Attrib kids618=6_max    1.1563857151435513
+    Attrib husby=0_61    1.2955091354844024
+    Attrib husby=62_122    -1.338564826060717
+    Attrib husby=123_max    1.10150147257319
+    Attrib region=northcentral    -1.8218692548021371
+    Attrib region=other    -4.311572236563529
+    Attrib region=south    2.9476744122634773
+    Attrib region=west    5.240138499940114
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -1.518995185107902
+    Attrib whrswk=0_30    5.7665590301750465
+    Attrib whrswk=31_60    -5.897571484119406
+    Attrib whrswk=61_max    1.6630367496955558
+    Attrib hhi=yes    1.9350250644166063
+    Attrib hhi2=yes    3.013475481882295
+    Attrib education=13-15years    -2.4404519244272382
+    Attrib education=12years    2.13720857321076
+    Attrib education=9-11years    3.65657194576354
+    Attrib education=16years    -0.28867706121958303
+    Attrib education=>16years    -0.7534930571787097
+    Attrib education=<9years    3.6056753173182265
+    Attrib race=white    0.3683194236507409
+    Attrib race=black    -0.25863479113157795
+    Attrib race=other    1.4068484091224542
+    Attrib hispanic=yes    1.7156393859901524
+    Attrib experience=0_16    4.981584083630442
+    Attrib experience=17_33    -2.233367198990935
+    Attrib experience=34_max    -1.273940946196951
+    Attrib kidslt6=0_1    -0.09564559545028577
+    Attrib kidslt6=2_3    -1.132365589644138
+    Attrib kidslt6=4_max    2.6115956187461205
+    Attrib kids618=0_2    -0.13369862969675872
+    Attrib kids618=3_5    0.10210651547183719
+    Attrib kids618=6_max    1.5078575960343419
+    Attrib husby=0_61    0.03389165657667298
+    Attrib husby=62_122    -0.17266972163054772
+    Attrib husby=123_max    1.5683736327853262
+    Attrib region=northcentral    2.067604023146534
+    Attrib region=other    4.47547511783601
+    Attrib region=south    -1.0077159016298665
+    Attrib region=west    -2.654622242891578
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -1.7015686938974355
+    Attrib whrswk=0_30    0.41389508842690426
+    Attrib whrswk=31_60    2.181225238966185
+    Attrib whrswk=61_max    -0.8835961399196386
+    Attrib hhi=yes    -5.6801869455428395
+    Attrib hhi2=yes    2.2917196987919994
+    Attrib education=13-15years    2.4408696422913185
+    Attrib education=12years    -2.7546021776963077
+    Attrib education=9-11years    -1.634149354555435
+    Attrib education=16years    4.204991148962851
+    Attrib education=>16years    2.499119300897567
+    Attrib education=<9years    2.302237431377507
+    Attrib race=white    1.5920843656450578
+    Attrib race=black    0.07899993321754917
+    Attrib race=other    0.1150837295917693
+    Attrib hispanic=yes    -2.1887180364827117
+    Attrib experience=0_16    3.9027668251041834
+    Attrib experience=17_33    -5.2359307051384265
+    Attrib experience=34_max    3.044791348287629
+    Attrib kidslt6=0_1    -1.5335240874841995
+    Attrib kidslt6=2_3    1.862629174007991
+    Attrib kidslt6=4_max    1.5196473819203744
+    Attrib kids618=0_2    -2.5453554903519438
+    Attrib kids618=3_5    2.5796567990384807
+    Attrib kids618=6_max    1.7681290013561066
+    Attrib husby=0_61    -4.3372570706636004
+    Attrib husby=62_122    6.39217053963385
+    Attrib husby=123_max    -0.4095550035905885
+    Attrib region=northcentral    -0.7582543294130303
+    Attrib region=other    5.711661669123976
+    Attrib region=south    -1.3329518956836193
+    Attrib region=west    -0.07654451759043998
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -2.0862781479202037
+    Attrib whrswk=0_30    1.0977712618293785
+    Attrib whrswk=31_60    -1.297326580021813
+    Attrib whrswk=61_max    2.3769901199710306
+    Attrib hhi=yes    6.220183894505817
+    Attrib hhi2=yes    3.425351906211881
+    Attrib education=13-15years    -1.3145653085655433
+    Attrib education=12years    0.9159403084514066
+    Attrib education=9-11years    6.048366021866535
+    Attrib education=16years    0.4622049699610373
+    Attrib education=>16years    -0.5969678472842637
+    Attrib education=<9years    3.049694412407103
+    Attrib race=white    1.5762268721968598
+    Attrib race=black    0.006675130551554743
+    Attrib race=other    0.5499029076814977
+    Attrib hispanic=yes    -0.8450842103021041
+    Attrib experience=0_16    4.99604536975187
+    Attrib experience=17_33    -2.9729338713469105
+    Attrib experience=34_max    0.07682580772107066
+    Attrib kidslt6=0_1    -2.2983957099119756
+    Attrib kidslt6=2_3    1.965116863351706
+    Attrib kidslt6=4_max    2.5299001328836392
+    Attrib kids618=0_2    -0.5761271854780755
+    Attrib kids618=3_5    0.39491809624109253
+    Attrib kids618=6_max    2.2780917034894586
+    Attrib husby=0_61    -2.0347048522454205
+    Attrib husby=62_122    1.901810117735099
+    Attrib husby=123_max    2.2126053710155893
+    Attrib region=northcentral    0.3779696536269002
+    Attrib region=other    4.37926374965636
+    Attrib region=south    -2.818015963084695
+    Attrib region=west    2.2620348624657485
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -1.391257923836891
+    Attrib whrswk=0_30    10.029487588103052
+    Attrib whrswk=31_60    -3.888044508808679
+    Attrib whrswk=61_max    -4.729506893773444
+    Attrib hhi=yes    1.780819308114793
+    Attrib hhi2=yes    -7.156298857816239
+    Attrib education=13-15years    -1.7556804547505744
+    Attrib education=12years    -2.1355724401856566
+    Attrib education=9-11years    4.914467597817929
+    Attrib education=16years    0.31377669742582337
+    Attrib education=>16years    -0.46680870655653345
+    Attrib education=<9years    4.685591717273347
+    Attrib race=white    2.4793917437266035
+    Attrib race=black    -0.37838506332663024
+    Attrib race=other    -0.6728466112498469
+    Attrib hispanic=yes    0.21283817790761209
+    Attrib experience=0_16    1.2022664285310223
+    Attrib experience=17_33    1.8409435352716912
+    Attrib experience=34_max    -1.5657974788499787
+    Attrib kidslt6=0_1    -0.2400752584881273
+    Attrib kidslt6=2_3    -1.1344909433758723
+    Attrib kidslt6=4_max    2.82760464433915
+    Attrib kids618=0_2    -0.025616138792378923
+    Attrib kids618=3_5    -0.016564840736771468
+    Attrib kids618=6_max    1.4197505006207451
+    Attrib husby=0_61    3.0570102526127774
+    Attrib husby=62_122    -3.1151659528574593
+    Attrib husby=123_max    1.44038520438116
+    Attrib region=northcentral    2.218184532063492
+    Attrib region=other    -1.8193091186673311
+    Attrib region=south    0.23968899284315884
+    Attrib region=west    2.16151436319389
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -0.601862588647426
+    Attrib whrswk=0_30    3.159593134635616
+    Attrib whrswk=31_60    -5.020148628701413
+    Attrib whrswk=61_max    2.521388438495497
+    Attrib hhi=yes    6.8592727079850775
+    Attrib hhi2=yes    -7.054618390453526
+    Attrib education=13-15years    0.658751085078019
+    Attrib education=12years    3.107477707576155
+    Attrib education=9-11years    2.023970305060137
+    Attrib education=16years    -1.948815875037701
+    Attrib education=>16years    -3.7323435175055835
+    Attrib education=<9years    2.3250230716407208
+    Attrib race=white    1.0112610620100135
+    Attrib race=black    -0.7111148042749558
+    Attrib race=other    0.3180971155134342
+    Attrib hispanic=yes    -0.026229150581483528
+    Attrib experience=0_16    0.2977997886112045
+    Attrib experience=17_33    -0.6587487442824775
+    Attrib experience=34_max    0.9244362322750471
+    Attrib kidslt6=0_1    0.8442054725346982
+    Attrib kidslt6=2_3    -1.8797567576111234
+    Attrib kidslt6=4_max    1.7520063518662232
+    Attrib kids618=0_2    -1.651099686777342
+    Attrib kids618=3_5    1.4274977535561484
+    Attrib kids618=6_max    0.8305063937538469
+    Attrib husby=0_61    0.7501572184574639
+    Attrib husby=62_122    -0.8649197205854398
+    Attrib husby=123_max    0.7449702074210507
+    Attrib region=northcentral    -0.5443087589224854
+    Attrib region=other    -0.10298744907689245
+    Attrib region=south    2.4439997660319945
+    Attrib region=west    -0.5078747599429823
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -1.320087342650829
+    Attrib whrswk=0_30    2.7795926242657973
+    Attrib whrswk=31_60    -2.0605223786490723
+    Attrib whrswk=61_max    0.6716972071946947
+    Attrib hhi=yes    3.4471953424155206
+    Attrib hhi2=yes    -1.4535893145508132
+    Attrib education=13-15years    1.8724500231927281
+    Attrib education=12years    -2.0025063345623866
+    Attrib education=9-11years    -1.9438578514575031
+    Attrib education=16years    -0.3284402768701814
+    Attrib education=>16years    1.8960466389250619
+    Attrib education=<9years    5.808700936104174
+    Attrib race=white    -3.6722430528341286
+    Attrib race=black    -1.3349020855062756
+    Attrib race=other    6.384656076383225
+    Attrib hispanic=yes    -2.3330739367587454
+    Attrib experience=0_16    -2.2561234030402284
+    Attrib experience=17_33    3.785602786371735
+    Attrib experience=34_max    -0.23366920947674552
+    Attrib kidslt6=0_1    0.5398784205371102
+    Attrib kidslt6=2_3    -0.6135210871770406
+    Attrib kidslt6=4_max    1.3598561445265798
+    Attrib kids618=0_2    1.3271934723221388
+    Attrib kids618=3_5    -0.8169096137576967
+    Attrib kids618=6_max    0.8793065570352517
+    Attrib husby=0_61    -1.286127926267854
+    Attrib husby=62_122    0.05475186537696893
+    Attrib husby=123_max    2.6227190101408455
+    Attrib region=northcentral    -0.15374703872003948
+    Attrib region=other    2.137079764993124
+    Attrib region=south    2.9874069895369706
+    Attrib region=west    -2.260163154773013
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    -3.9577826618345244
+    Attrib whrswk=0_30    -2.5110001828974737
+    Attrib whrswk=31_60    6.312741321190427
+    Attrib whrswk=61_max    0.2037697192823915
+    Attrib hhi=yes    -14.852534983683409
+    Attrib hhi2=yes    7.740160553769654
+    Attrib education=13-15years    0.8381130082943062
+    Attrib education=12years    0.6520800099737757
+    Attrib education=9-11years    1.9857793205444447
+    Attrib education=16years    5.652261989341434
+    Attrib education=>16years    8.369486552845467
+    Attrib education=<9years    -1.7069613130182204
+    Attrib race=white    2.545231460740885
+    Attrib race=black    -0.09770328263572162
+    Attrib race=other    1.4613306417528267
+    Attrib hispanic=yes    -1.8785284463267817
+    Attrib experience=0_16    -0.34698818993269687
+    Attrib experience=17_33    1.7901764090566425
+    Attrib experience=34_max    2.518382397768185
+    Attrib kidslt6=0_1    0.19263099153598223
+    Attrib kidslt6=2_3    -0.5619994582712797
+    Attrib kidslt6=4_max    4.3630414244318745
+    Attrib kids618=0_2    2.04285681586277
+    Attrib kids618=3_5    -1.874244765581469
+    Attrib kids618=6_max    3.8312245627512023
+    Attrib husby=0_61    2.2162135302562
+    Attrib husby=62_122    -0.6406044174017042
+    Attrib husby=123_max    2.3284278557369955
+    Attrib region=northcentral    2.4031685339329263
+    Attrib region=other    1.9894876360086617
+    Attrib region=south    1.8734080112101972
+    Attrib region=west    1.6199355660047554
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    -0.8754301627172122
+    Attrib whrswk=0_30    0.299995210720229
+    Attrib whrswk=31_60    -4.367916773420017
+    Attrib whrswk=61_max    4.950017905485364
+    Attrib hhi=yes    3.12022386723519
+    Attrib hhi2=yes    0.10780881905684232
+    Attrib education=13-15years    2.451745284602238
+    Attrib education=12years    -2.117300311650481
+    Attrib education=9-11years    1.1533392313946127
+    Attrib education=16years    1.2130888077683963
+    Attrib education=>16years    -0.5860868459993915
+    Attrib education=<9years    1.5557289901155569
+    Attrib race=white    0.4727304020697697
+    Attrib race=black    -0.6804804305826109
+    Attrib race=other    1.1388398402399131
+    Attrib hispanic=yes    -0.683152585076481
+    Attrib experience=0_16    -0.07896238955500057
+    Attrib experience=17_33    -1.6609657899392538
+    Attrib experience=34_max    2.630553879983149
+    Attrib kidslt6=0_1    -1.9482443093332813
+    Attrib kidslt6=2_3    1.566793991454076
+    Attrib kidslt6=4_max    1.3185650661741466
+    Attrib kids618=0_2    0.5788100671965828
+    Attrib kids618=3_5    -0.5714462365911969
+    Attrib kids618=6_max    0.9685270983752144
+    Attrib husby=0_61    -2.4587241025624835
+    Attrib husby=62_122    2.308171301914905
+    Attrib husby=123_max    1.0640258264962084
+    Attrib region=northcentral    -1.5656337896541461
+    Attrib region=other    0.7123985229335965
+    Attrib region=south    1.33778737470487
+    Attrib region=west    1.3165475989180804
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    -1.151610031609878
+    Attrib whrswk=0_30    3.018759156293753
+    Attrib whrswk=31_60    -2.7354167177959305
+    Attrib whrswk=61_max    0.9866094620464916
+    Attrib hhi=yes    4.075554507953137
+    Attrib hhi2=yes    -1.412133135164265
+    Attrib education=13-15years    2.4203471617124426
+    Attrib education=12years    1.3058526636143513
+    Attrib education=9-11years    1.4521712432733722
+    Attrib education=16years    -1.8180010066144878
+    Attrib education=>16years    -0.8095471051347314
+    Attrib education=<9years    2.0927778452604686
+    Attrib race=white    -0.2485432161288456
+    Attrib race=black    0.07151017804372245
+    Attrib race=other    1.336198676538732
+    Attrib hispanic=yes    -0.25915273815448003
+    Attrib experience=0_16    -1.0988205412427046
+    Attrib experience=17_33    -0.128292376311321
+    Attrib experience=34_max    2.3746730796406808
+    Attrib kidslt6=0_1    0.26932304515644223
+    Attrib kidslt6=2_3    -0.36889382905115553
+    Attrib kidslt6=4_max    1.233619078128704
+    Attrib kids618=0_2    0.27553485487537227
+    Attrib kids618=3_5    -0.3345150233090879
+    Attrib kids618=6_max    1.2594548463227817
+    Attrib husby=0_61    -3.5088406025092875
+    Attrib husby=62_122    3.279235311860745
+    Attrib husby=123_max    1.4204952368127386
+    Attrib region=northcentral    2.4055785373757206
+    Attrib region=other    1.644918903433681
+    Attrib region=south    -1.1691753796405804
+    Attrib region=west    -0.5726027033988267
+Sigmoid Node 16
+    Inputs    Weights
+    Threshold    0.02759489415628776
+    Attrib whrswk=0_30    5.666018299782396
+    Attrib whrswk=31_60    -6.262313304443398
+    Attrib whrswk=61_max    0.5972703113359482
+    Attrib hhi=yes    6.2297787728362755
+    Attrib hhi2=yes    -9.63773496418731
+    Attrib education=13-15years    -0.23104546682769994
+    Attrib education=12years    4.869708594142558
+    Attrib education=9-11years    1.272642181345843
+    Attrib education=16years    -2.7687324689790036
+    Attrib education=>16years    -7.129379510998853
+    Attrib education=<9years    3.7748360953089906
+    Attrib race=white    -3.896175909504315
+    Attrib race=black    1.2450806906722105
+    Attrib race=other    2.6698245309972863
+    Attrib hispanic=yes    5.002855341163993
+    Attrib experience=0_16    3.072481475677675
+    Attrib experience=17_33    0.03756599305285066
+    Attrib experience=34_max    -3.1430119294640857
+    Attrib kidslt6=0_1    -1.1820212820514415
+    Attrib kidslt6=2_3    1.6453573075040002
+    Attrib kidslt6=4_max    -0.43565070383546456
+    Attrib kids618=0_2    2.1625432590245905
+    Attrib kids618=3_5    -2.16456472656649
+    Attrib kids618=6_max    -0.013268943111784238
+    Attrib husby=0_61    1.8886919586769149
+    Attrib husby=62_122    -2.0021979480986416
+    Attrib husby=123_max    0.052399669722725375
+    Attrib region=northcentral    -3.764581302768855
+    Attrib region=other    -2.45996183541588
+    Attrib region=south    3.801180724556868
+    Attrib region=west    2.4325559587341172
+Sigmoid Node 17
+    Inputs    Weights
+    Threshold    -0.7336493066113725
+    Attrib whrswk=0_30    -0.07924137379203146
+    Attrib whrswk=31_60    -0.25205042218465223
+    Attrib whrswk=61_max    1.1687486560190359
+    Attrib hhi=yes    15.67345155130323
+    Attrib hhi2=yes    0.47856651559936225
+    Attrib education=13-15years    1.593863807749339
+    Attrib education=12years    0.003225159130586975
+    Attrib education=9-11years    -5.912414625102537
+    Attrib education=16years    0.6578942703490128
+    Attrib education=>16years    2.9420861739136224
+    Attrib education=<9years    3.7787205898417233
+    Attrib race=white    1.4225365513427524
+    Attrib race=black    -6.271845210942447
+    Attrib race=other    5.510360803168192
+    Attrib hispanic=yes    -2.9277633591873755
+    Attrib experience=0_16    0.5743073939713954
+    Attrib experience=17_33    -1.5430024601038272
+    Attrib experience=34_max    1.71909887665441
+    Attrib kidslt6=0_1    0.7324163943596886
+    Attrib kidslt6=2_3    -1.1761729107044647
+    Attrib kidslt6=4_max    1.1337854123591944
+    Attrib kids618=0_2    -1.045560217352374
+    Attrib kids618=3_5    0.948979461077081
+    Attrib kids618=6_max    0.8382840896186019
+    Attrib husby=0_61    1.583270368205956
+    Attrib husby=62_122    -1.6756668575695037
+    Attrib husby=123_max    0.9059766600689036
+    Attrib region=northcentral    -1.9399035447417314
+    Attrib region=other    -1.3681511772731494
+    Attrib region=south    1.2646644535082023
+    Attrib region=west    3.5872924187398008
+Class no
+    Input
+    Node 0
+Class yes
+    Input
+    Node 1
+
+
+Time taken to build model: 32.58 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.36 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       17713               79.5304 %
+Incorrectly Classified Instances      4559               20.4696 %
+Kappa statistic                          0.5409
+Mean absolute error                      0.2637
+Root mean squared error                  0.3719
+Relative absolute error                 56.363  %
+Root relative squared error             76.8871 %
+Total Number of Instances            22272     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.906    0.390    0.796      0.906    0.847      0.551    0.876     0.917     no
+                 0.610    0.094    0.794      0.610    0.690      0.551    0.876     0.802     yes
+Weighted Avg.    0.795    0.280    0.795      0.795    0.788      0.551    0.876     0.874     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 12646  1315 |     a = no
+  3244  5067 |     b = yes
+

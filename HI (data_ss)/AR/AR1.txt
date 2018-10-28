@@ -1,0 +1,65 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -I -N 10 -T 0 -C 0.7 -D 0.05 -U 1.0 -M 0.2 -S -1.0 -c -1
+Relation:     HI-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R1-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R8-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R9-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R10-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R11-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R13-precision6-weka.filters.unsupervised.attribute.Remove-R13
+Instances:    22272
+Attributes:   12
+              whrswk
+              hhi
+              whi
+              hhi2
+              education
+              race
+              hispanic
+              experience
+              kidslt6
+              kids618
+              husby
+              region
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.85 (18931 instances)
+Minimum metric <confidence>: 0.7
+Number of cycles performed: 3
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 5
+
+Large Itemsets L(1):
+race=white 20860
+hispanic=no 20601
+kidslt6=0_1 20450
+kids618=0_2 20966
+husby=0_61 20573
+
+Size of set of large itemsets L(2): 9
+
+Large Itemsets L(2):
+race=white hispanic=no 19238
+race=white kidslt6=0_1 19146
+race=white kids618=0_2 19672
+race=white husby=0_61 19199
+hispanic=no kidslt6=0_1 19013
+hispanic=no kids618=0_2 19453
+hispanic=no husby=0_61 18957
+kidslt6=0_1 kids618=0_2 19212
+kids618=0_2 husby=0_61 19385
+
+Best rules found:
+
+ 1. hispanic=no 20601 ==> kids618=0_2 19453    <conf:(0.94)> lift:(1) lev:(0) [60] conv:(1.05)
+ 2. race=white 20860 ==> kids618=0_2 19672    <conf:(0.94)> lift:(1) lev:(0) [35] conv:(1.03)
+ 3. husby=0_61 20573 ==> kids618=0_2 19385    <conf:(0.94)> lift:(1) lev:(0) [18] conv:(1.01)
+ 4. kidslt6=0_1 20450 ==> kids618=0_2 19212    <conf:(0.94)> lift:(1) lev:(-0) [-38] conv:(0.97)
+ 5. kids618=0_2 20966 ==> race=white 19672    <conf:(0.94)> lift:(1) lev:(0) [35] conv:(1.03)
+ 6. kidslt6=0_1 20450 ==> race=white 19146    <conf:(0.94)> lift:(1) lev:(-0) [-7] conv:(0.99)
+ 7. hispanic=no 20601 ==> race=white 19238    <conf:(0.93)> lift:(1) lev:(-0) [-56] conv:(0.96)
+ 8. husby=0_61 20573 ==> race=white 19199    <conf:(0.93)> lift:(1) lev:(-0) [-69] conv:(0.95)
+ 9. kidslt6=0_1 20450 ==> hispanic=no 19013    <conf:(0.93)> lift:(1.01) lev:(0) [97] conv:(1.07)
+10. kids618=0_2 20966 ==> hispanic=no 19453    <conf:(0.93)> lift:(1) lev:(0) [60] conv:(1.04)
+

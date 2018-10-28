@@ -1,0 +1,75 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 6 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     HI-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R1-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R8-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R9-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R10-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R11-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R13-precision6-weka.filters.unsupervised.attribute.Remove-R13
+Instances:    22272
+Attributes:   12
+              whrswk
+              hhi
+              whi
+              hhi2
+              education
+              race
+              hispanic
+              experience
+              kidslt6
+              kids618
+              husby
+              region
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 5
+Within cluster sum of squared errors: 51216.0
+
+Initial starting points (random):
+
+Cluster 0: 31_60,no,yes,yes,>16years,white,no,34_max,0_1,0_2,0_61,other
+Cluster 1: 0_30,no,no,no,12years,white,yes,34_max,0_1,0_2,0_61,south
+Cluster 2: 31_60,yes,yes,yes,>16years,white,no,17_33,0_1,0_2,62_122,other
+Cluster 3: 31_60,yes,no,yes,13-15years,white,no,17_33,0_1,0_2,0_61,west
+Cluster 4: 31_60,no,yes,no,13-15years,white,no,17_33,0_1,0_2,0_61,south
+Cluster 5: 31_60,no,no,no,13-15years,black,no,0_16,0_1,0_2,0_61,south
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                             Cluster#
+Attribute        Full Data          0          1          2          3          4          5
+                 (22272.0)   (4064.0)   (4622.0)   (5859.0)   (3625.0)   (3108.0)    (994.0)
+============================================================================================
+whrswk               31_60      31_60       0_30      31_60       0_30      31_60      31_60
+hhi                     no         no         no        yes        yes         no         no
+whi                     no        yes         no         no         no        yes         no
+hhi2                   yes        yes         no        yes        yes         no         no
+education          12years    12years    12years    12years 13-15years 13-15years 13-15years
+race                 white      white      white      white      white      white      white
+hispanic                no         no         no         no         no         no         no
+experience           17_33       0_16     34_max      17_33      17_33      17_33       0_16
+kidslt6                0_1        0_1        0_1        0_1        0_1        0_1        0_1
+kids618                0_2        0_2        0_2        0_2        0_2        0_2        0_2
+husby                 0_61       0_61       0_61       0_61       0_61       0_61       0_61
+region               south      other      south      other       west      south      south
+
+
+
+
+Time taken to build model (full training data) : 0.16 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       4064 ( 18%)
+1       4622 ( 21%)
+2       5859 ( 26%)
+3       3625 ( 16%)
+4       3108 ( 14%)
+5        994 (  4%)
+

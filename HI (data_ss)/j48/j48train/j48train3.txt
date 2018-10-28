@@ -1,0 +1,479 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -R -N 9 -Q 3 -M 2
+Relation:     HI-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R1-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R8-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R9-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R10-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R11-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R13-precision6-weka.filters.unsupervised.attribute.Remove-R13-weka.filters.unsupervised.instance.RemovePercentage-P10.0
+Instances:    20045
+Attributes:   12
+              whrswk
+              hhi
+              whi
+              hhi2
+              education
+              race
+              hispanic
+              experience
+              kidslt6
+              kids618
+              husby
+              region
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+race = white
+|   hispanic = no
+|   |   husby = 0_61
+|   |   |   hhi = no
+|   |   |   |   education = 13-15years
+|   |   |   |   |   kids618 = 0_2
+|   |   |   |   |   |   hhi2 = no
+|   |   |   |   |   |   |   whi = no
+|   |   |   |   |   |   |   |   kidslt6 = 0_1
+|   |   |   |   |   |   |   |   |   whrswk = 0_30: west (335.0/215.0)
+|   |   |   |   |   |   |   |   |   whrswk = 31_60: south (209.0/135.0)
+|   |   |   |   |   |   |   |   |   whrswk = 61_max: west (0.0)
+|   |   |   |   |   |   |   |   kidslt6 = 2_3
+|   |   |   |   |   |   |   |   |   whrswk = 0_30: west (45.0/29.0)
+|   |   |   |   |   |   |   |   |   whrswk = 31_60: south (14.0/8.0)
+|   |   |   |   |   |   |   |   |   whrswk = 61_max: west (0.0)
+|   |   |   |   |   |   |   |   kidslt6 = 4_max: west (2.0)
+|   |   |   |   |   |   |   whi = yes
+|   |   |   |   |   |   |   |   whrswk = 0_30
+|   |   |   |   |   |   |   |   |   experience = 0_16: northcentral (40.0/29.0)
+|   |   |   |   |   |   |   |   |   experience = 17_33: other (37.0/25.0)
+|   |   |   |   |   |   |   |   |   experience = 34_max: northcentral (21.0/11.0)
+|   |   |   |   |   |   |   |   whrswk = 31_60
+|   |   |   |   |   |   |   |   |   kidslt6 = 0_1
+|   |   |   |   |   |   |   |   |   |   experience = 0_16: northcentral (216.0/153.0)
+|   |   |   |   |   |   |   |   |   |   experience = 17_33: west (293.0/211.0)
+|   |   |   |   |   |   |   |   |   |   experience = 34_max: west (65.0/43.0)
+|   |   |   |   |   |   |   |   |   kidslt6 = 2_3: west (37.0/22.0)
+|   |   |   |   |   |   |   |   |   kidslt6 = 4_max: west (0.0)
+|   |   |   |   |   |   |   |   whrswk = 61_max: west (3.0/1.0)
+|   |   |   |   |   |   hhi2 = yes: south (395.0/226.0)
+|   |   |   |   |   kids618 = 3_5
+|   |   |   |   |   |   kidslt6 = 0_1
+|   |   |   |   |   |   |   hhi2 = no
+|   |   |   |   |   |   |   |   experience = 0_16: west (22.0/13.0)
+|   |   |   |   |   |   |   |   experience = 17_33
+|   |   |   |   |   |   |   |   |   whi = no
+|   |   |   |   |   |   |   |   |   |   whrswk = 0_30: other (15.0/10.0)
+|   |   |   |   |   |   |   |   |   |   whrswk = 31_60: northcentral (10.0/7.0)
+|   |   |   |   |   |   |   |   |   |   whrswk = 61_max: west (0.0)
+|   |   |   |   |   |   |   |   |   whi = yes: west (21.0/10.0)
+|   |   |   |   |   |   |   |   experience = 34_max: west (1.0)
+|   |   |   |   |   |   |   hhi2 = yes: west (9.0/5.0)
+|   |   |   |   |   |   kidslt6 = 2_3: west (4.0)
+|   |   |   |   |   |   kidslt6 = 4_max: west (0.0)
+|   |   |   |   |   kids618 = 6_max: west (2.0)
+|   |   |   |   education = 12years
+|   |   |   |   |   kids618 = 0_2
+|   |   |   |   |   |   kidslt6 = 0_1
+|   |   |   |   |   |   |   experience = 0_16: south (668.0/410.0)
+|   |   |   |   |   |   |   experience = 17_33: south (1073.0/709.0)
+|   |   |   |   |   |   |   experience = 34_max
+|   |   |   |   |   |   |   |   whrswk = 0_30
+|   |   |   |   |   |   |   |   |   hhi2 = no
+|   |   |   |   |   |   |   |   |   |   whi = no: northcentral (301.0/211.0)
+|   |   |   |   |   |   |   |   |   |   whi = yes: south (65.0/46.0)
+|   |   |   |   |   |   |   |   |   hhi2 = yes: northcentral (56.0/39.0)
+|   |   |   |   |   |   |   |   whrswk = 31_60: south (344.0/230.0)
+|   |   |   |   |   |   |   |   whrswk = 61_max: west (1.0)
+|   |   |   |   |   |   kidslt6 = 2_3: northcentral (165.0/107.0)
+|   |   |   |   |   |   kidslt6 = 4_max: other (3.0/1.0)
+|   |   |   |   |   kids618 = 3_5: northcentral (132.0/82.0)
+|   |   |   |   |   kids618 = 6_max: south (0.0)
+|   |   |   |   education = 9-11years: south (614.0/337.0)
+|   |   |   |   education = 16years
+|   |   |   |   |   hhi2 = no
+|   |   |   |   |   |   whi = no: west (262.0/185.0)
+|   |   |   |   |   |   whi = yes
+|   |   |   |   |   |   |   experience = 0_16
+|   |   |   |   |   |   |   |   kids618 = 0_2
+|   |   |   |   |   |   |   |   |   whrswk = 0_30: northcentral (22.0/14.0)
+|   |   |   |   |   |   |   |   |   whrswk = 31_60
+|   |   |   |   |   |   |   |   |   |   kidslt6 = 0_1: northcentral (207.0/149.0)
+|   |   |   |   |   |   |   |   |   |   kidslt6 = 2_3: other (25.0/17.0)
+|   |   |   |   |   |   |   |   |   |   kidslt6 = 4_max: other (0.0)
+|   |   |   |   |   |   |   |   |   whrswk = 61_max: other (1.0)
+|   |   |   |   |   |   |   |   kids618 = 3_5: other (5.0/2.0)
+|   |   |   |   |   |   |   |   kids618 = 6_max: other (0.0)
+|   |   |   |   |   |   |   experience = 17_33: other (210.0/152.0)
+|   |   |   |   |   |   |   experience = 34_max: west (50.0/34.0)
+|   |   |   |   |   hhi2 = yes
+|   |   |   |   |   |   whrswk = 0_30
+|   |   |   |   |   |   |   experience = 0_16: south (15.0/9.0)
+|   |   |   |   |   |   |   experience = 17_33: west (10.0/5.0)
+|   |   |   |   |   |   |   experience = 34_max: west (9.0/5.0)
+|   |   |   |   |   |   whrswk = 31_60: south (289.0/189.0)
+|   |   |   |   |   |   whrswk = 61_max: northcentral (2.0/1.0)
+|   |   |   |   education = >16years
+|   |   |   |   |   hhi2 = no
+|   |   |   |   |   |   whrswk = 0_30: other (55.0/36.0)
+|   |   |   |   |   |   whrswk = 31_60
+|   |   |   |   |   |   |   whi = no
+|   |   |   |   |   |   |   |   experience = 0_16: northcentral (16.0/10.0)
+|   |   |   |   |   |   |   |   experience = 17_33: south (17.0/11.0)
+|   |   |   |   |   |   |   |   experience = 34_max: south (1.0)
+|   |   |   |   |   |   |   whi = yes: other (231.0/151.0)
+|   |   |   |   |   |   whrswk = 61_max: northcentral (2.0/1.0)
+|   |   |   |   |   hhi2 = yes: south (162.0/107.0)
+|   |   |   |   education = <9years: south (309.0/157.0)
+|   |   |   hhi = yes
+|   |   |   |   kids618 = 0_2
+|   |   |   |   |   education = 13-15years
+|   |   |   |   |   |   kidslt6 = 0_1
+|   |   |   |   |   |   |   whi = no
+|   |   |   |   |   |   |   |   experience = 0_16: northcentral (412.0/280.0)
+|   |   |   |   |   |   |   |   experience = 17_33: south (619.0/454.0)
+|   |   |   |   |   |   |   |   experience = 34_max: west (207.0/147.0)
+|   |   |   |   |   |   |   whi = yes
+|   |   |   |   |   |   |   |   whrswk = 0_30: west (43.0/23.0)
+|   |   |   |   |   |   |   |   whrswk = 31_60: south (340.0/245.0)
+|   |   |   |   |   |   |   |   whrswk = 61_max: west (0.0)
+|   |   |   |   |   |   kidslt6 = 2_3
+|   |   |   |   |   |   |   whi = no
+|   |   |   |   |   |   |   |   whrswk = 0_30: other (133.0/95.0)
+|   |   |   |   |   |   |   |   whrswk = 31_60
+|   |   |   |   |   |   |   |   |   experience = 0_16: west (24.0/16.0)
+|   |   |   |   |   |   |   |   |   experience = 17_33: south (4.0/2.0)
+|   |   |   |   |   |   |   |   |   experience = 34_max: south (0.0)
+|   |   |   |   |   |   |   |   whrswk = 61_max: west (0.0)
+|   |   |   |   |   |   |   whi = yes
+|   |   |   |   |   |   |   |   whrswk = 0_30: northcentral (5.0/3.0)
+|   |   |   |   |   |   |   |   whrswk = 31_60
+|   |   |   |   |   |   |   |   |   experience = 0_16: northcentral (20.0/13.0)
+|   |   |   |   |   |   |   |   |   experience = 17_33: west (3.0/1.0)
+|   |   |   |   |   |   |   |   |   experience = 34_max: west (0.0)
+|   |   |   |   |   |   |   |   whrswk = 61_max: west (0.0)
+|   |   |   |   |   |   kidslt6 = 4_max: northcentral (1.0)
+|   |   |   |   |   education = 12years
+|   |   |   |   |   |   whrswk = 0_30
+|   |   |   |   |   |   |   kidslt6 = 0_1
+|   |   |   |   |   |   |   |   whi = no: northcentral (1335.0/904.0)
+|   |   |   |   |   |   |   |   whi = yes: other (64.0/43.0)
+|   |   |   |   |   |   |   kidslt6 = 2_3: other (138.0/90.0)
+|   |   |   |   |   |   |   kidslt6 = 4_max: west (1.0)
+|   |   |   |   |   |   whrswk = 31_60
+|   |   |   |   |   |   |   kidslt6 = 0_1
+|   |   |   |   |   |   |   |   experience = 0_16: south (288.0/195.0)
+|   |   |   |   |   |   |   |   experience = 17_33: northcentral (679.0/471.0)
+|   |   |   |   |   |   |   |   experience = 34_max
+|   |   |   |   |   |   |   |   |   whi = no: south (130.0/82.0)
+|   |   |   |   |   |   |   |   |   whi = yes: other (100.0/69.0)
+|   |   |   |   |   |   |   kidslt6 = 2_3
+|   |   |   |   |   |   |   |   experience = 0_16
+|   |   |   |   |   |   |   |   |   whi = no: west (30.0/20.0)
+|   |   |   |   |   |   |   |   |   whi = yes: northcentral (12.0/8.0)
+|   |   |   |   |   |   |   |   experience = 17_33: northcentral (12.0/7.0)
+|   |   |   |   |   |   |   |   experience = 34_max: northcentral (0.0)
+|   |   |   |   |   |   |   kidslt6 = 4_max: other (1.0)
+|   |   |   |   |   |   whrswk = 61_max: northcentral (4.0/1.0)
+|   |   |   |   |   education = 9-11years
+|   |   |   |   |   |   experience = 0_16
+|   |   |   |   |   |   |   whi = no
+|   |   |   |   |   |   |   |   kidslt6 = 0_1: south (43.0/28.0)
+|   |   |   |   |   |   |   |   kidslt6 = 2_3: other (19.0/11.0)
+|   |   |   |   |   |   |   |   kidslt6 = 4_max: other (1.0)
+|   |   |   |   |   |   |   whi = yes: south (12.0/3.0)
+|   |   |   |   |   |   experience = 17_33
+|   |   |   |   |   |   |   kidslt6 = 0_1
+|   |   |   |   |   |   |   |   whi = no: south (132.0/79.0)
+|   |   |   |   |   |   |   |   whi = yes: other (20.0/14.0)
+|   |   |   |   |   |   |   kidslt6 = 2_3: south (3.0/1.0)
+|   |   |   |   |   |   |   kidslt6 = 4_max: south (0.0)
+|   |   |   |   |   |   experience = 34_max: northcentral (201.0/130.0)
+|   |   |   |   |   education = 16years
+|   |   |   |   |   |   experience = 0_16
+|   |   |   |   |   |   |   whrswk = 0_30
+|   |   |   |   |   |   |   |   kidslt6 = 0_1: other (134.0/89.0)
+|   |   |   |   |   |   |   |   kidslt6 = 2_3: northcentral (78.0/54.0)
+|   |   |   |   |   |   |   |   kidslt6 = 4_max: other (0.0)
+|   |   |   |   |   |   |   whrswk = 31_60: south (290.0/206.0)
+|   |   |   |   |   |   |   whrswk = 61_max: northcentral (2.0/1.0)
+|   |   |   |   |   |   experience = 17_33: west (393.0/278.0)
+|   |   |   |   |   |   experience = 34_max
+|   |   |   |   |   |   |   whi = no: other (80.0/51.0)
+|   |   |   |   |   |   |   whi = yes: west (10.0/4.0)
+|   |   |   |   |   education = >16years: other (357.0/251.0)
+|   |   |   |   |   education = <9years
+|   |   |   |   |   |   kidslt6 = 0_1
+|   |   |   |   |   |   |   experience = 0_16: south (7.0/3.0)
+|   |   |   |   |   |   |   experience = 17_33
+|   |   |   |   |   |   |   |   whi = no
+|   |   |   |   |   |   |   |   |   whrswk = 0_30: south (26.0/16.0)
+|   |   |   |   |   |   |   |   |   whrswk = 31_60: other (12.0/8.0)
+|   |   |   |   |   |   |   |   |   whrswk = 61_max: south (0.0)
+|   |   |   |   |   |   |   |   whi = yes: northcentral (4.0/2.0)
+|   |   |   |   |   |   |   experience = 34_max: south (103.0/67.0)
+|   |   |   |   |   |   kidslt6 = 2_3: west (4.0/1.0)
+|   |   |   |   |   |   kidslt6 = 4_max: south (0.0)
+|   |   |   |   kids618 = 3_5
+|   |   |   |   |   experience = 0_16
+|   |   |   |   |   |   education = 13-15years: west (46.0/27.0)
+|   |   |   |   |   |   education = 12years: northcentral (42.0/28.0)
+|   |   |   |   |   |   education = 9-11years: west (5.0/2.0)
+|   |   |   |   |   |   education = 16years: northcentral (13.0/7.0)
+|   |   |   |   |   |   education = >16years: west (4.0/1.0)
+|   |   |   |   |   |   education = <9years: northcentral (1.0)
+|   |   |   |   |   experience = 17_33
+|   |   |   |   |   |   education = 13-15years: northcentral (77.0/52.0)
+|   |   |   |   |   |   education = 12years
+|   |   |   |   |   |   |   whi = no
+|   |   |   |   |   |   |   |   whrswk = 0_30: northcentral (94.0/67.0)
+|   |   |   |   |   |   |   |   whrswk = 31_60: west (39.0/25.0)
+|   |   |   |   |   |   |   |   whrswk = 61_max: west (0.0)
+|   |   |   |   |   |   |   whi = yes: west (9.0/4.0)
+|   |   |   |   |   |   education = 9-11years
+|   |   |   |   |   |   |   whrswk = 0_30: south (14.0/5.0)
+|   |   |   |   |   |   |   whrswk = 31_60: northcentral (4.0/2.0)
+|   |   |   |   |   |   |   whrswk = 61_max: south (0.0)
+|   |   |   |   |   |   education = 16years: west (53.0/31.0)
+|   |   |   |   |   |   education = >16years
+|   |   |   |   |   |   |   whi = no
+|   |   |   |   |   |   |   |   whrswk = 0_30: northcentral (3.0/1.0)
+|   |   |   |   |   |   |   |   whrswk = 31_60: other (4.0/2.0)
+|   |   |   |   |   |   |   |   whrswk = 61_max: northcentral (0.0)
+|   |   |   |   |   |   |   whi = yes: other (5.0/3.0)
+|   |   |   |   |   |   education = <9years: other (6.0/4.0)
+|   |   |   |   |   experience = 34_max: other (2.0)
+|   |   |   |   kids618 = 6_max: northcentral (3.0/2.0)
+|   |   husby = 62_122
+|   |   |   kids618 = 0_2
+|   |   |   |   education = 13-15years
+|   |   |   |   |   kidslt6 = 0_1
+|   |   |   |   |   |   hhi = no
+|   |   |   |   |   |   |   whrswk = 0_30
+|   |   |   |   |   |   |   |   hhi2 = no
+|   |   |   |   |   |   |   |   |   experience = 0_16: south (5.0/3.0)
+|   |   |   |   |   |   |   |   |   experience = 17_33: west (14.0/7.0)
+|   |   |   |   |   |   |   |   |   experience = 34_max: northcentral (1.0)
+|   |   |   |   |   |   |   |   hhi2 = yes: west (6.0/2.0)
+|   |   |   |   |   |   |   whrswk = 31_60
+|   |   |   |   |   |   |   |   experience = 0_16: west (10.0/4.0)
+|   |   |   |   |   |   |   |   experience = 17_33: south (31.0/20.0)
+|   |   |   |   |   |   |   |   experience = 34_max: west (7.0/4.0)
+|   |   |   |   |   |   |   whrswk = 61_max: west (0.0)
+|   |   |   |   |   |   hhi = yes
+|   |   |   |   |   |   |   experience = 0_16: west (33.0/23.0)
+|   |   |   |   |   |   |   experience = 17_33
+|   |   |   |   |   |   |   |   whi = no: other (130.0/92.0)
+|   |   |   |   |   |   |   |   whi = yes: west (20.0/13.0)
+|   |   |   |   |   |   |   experience = 34_max: south (43.0/28.0)
+|   |   |   |   |   kidslt6 = 2_3
+|   |   |   |   |   |   hhi = no: south (6.0/3.0)
+|   |   |   |   |   |   hhi = yes
+|   |   |   |   |   |   |   experience = 0_16: west (10.0/6.0)
+|   |   |   |   |   |   |   experience = 17_33: south (7.0/2.0)
+|   |   |   |   |   |   |   experience = 34_max: south (0.0)
+|   |   |   |   |   kidslt6 = 4_max: west (0.0)
+|   |   |   |   education = 12years: other (285.0/197.0)
+|   |   |   |   education = 9-11years: south (22.0/15.0)
+|   |   |   |   education = 16years
+|   |   |   |   |   kidslt6 = 0_1
+|   |   |   |   |   |   experience = 0_16: other (98.0/57.0)
+|   |   |   |   |   |   experience = 17_33
+|   |   |   |   |   |   |   hhi = no: west (43.0/31.0)
+|   |   |   |   |   |   |   hhi = yes: other (161.0/103.0)
+|   |   |   |   |   |   experience = 34_max
+|   |   |   |   |   |   |   whi = no: south (33.0/23.0)
+|   |   |   |   |   |   |   whi = yes
+|   |   |   |   |   |   |   |   hhi = no: other (2.0)
+|   |   |   |   |   |   |   |   hhi = yes: west (4.0/2.0)
+|   |   |   |   |   kidslt6 = 2_3
+|   |   |   |   |   |   experience = 0_16
+|   |   |   |   |   |   |   hhi = no
+|   |   |   |   |   |   |   |   whrswk = 0_30: northcentral (5.0/3.0)
+|   |   |   |   |   |   |   |   whrswk = 31_60: other (2.0/1.0)
+|   |   |   |   |   |   |   |   whrswk = 61_max: south (0.0)
+|   |   |   |   |   |   |   hhi = yes: other (21.0/12.0)
+|   |   |   |   |   |   experience = 17_33: other (3.0/1.0)
+|   |   |   |   |   |   experience = 34_max: other (0.0)
+|   |   |   |   |   kidslt6 = 4_max: other (0.0)
+|   |   |   |   education = >16years
+|   |   |   |   |   hhi = no
+|   |   |   |   |   |   experience = 0_16: south (28.0/20.0)
+|   |   |   |   |   |   experience = 17_33
+|   |   |   |   |   |   |   whrswk = 0_30: other (6.0/3.0)
+|   |   |   |   |   |   |   whrswk = 31_60: south (33.0/19.0)
+|   |   |   |   |   |   |   whrswk = 61_max: northcentral (1.0)
+|   |   |   |   |   |   experience = 34_max: west (3.0/1.0)
+|   |   |   |   |   hhi = yes: other (117.0/64.0)
+|   |   |   |   education = <9years: northcentral (2.0/1.0)
+|   |   |   kids618 = 3_5: northcentral (92.0/62.0)
+|   |   |   kids618 = 6_max: northcentral (1.0)
+|   |   husby = 123_max: other (9.0/5.0)
+|   hispanic = yes
+|   |   education = 13-15years
+|   |   |   kids618 = 0_2
+|   |   |   |   husby = 0_61
+|   |   |   |   |   kidslt6 = 0_1
+|   |   |   |   |   |   hhi = no: west (107.0/70.0)
+|   |   |   |   |   |   hhi = yes
+|   |   |   |   |   |   |   experience = 0_16: south (28.0/15.0)
+|   |   |   |   |   |   |   experience = 17_33: west (32.0/19.0)
+|   |   |   |   |   |   |   experience = 34_max: south (9.0/6.0)
+|   |   |   |   |   kidslt6 = 2_3: west (25.0/15.0)
+|   |   |   |   |   kidslt6 = 4_max: other (1.0)
+|   |   |   |   husby = 62_122: south (9.0/4.0)
+|   |   |   |   husby = 123_max: west (0.0)
+|   |   |   kids618 = 3_5: west (20.0/9.0)
+|   |   |   kids618 = 6_max: west (0.0)
+|   |   education = 12years
+|   |   |   experience = 0_16: west (150.0/82.0)
+|   |   |   experience = 17_33
+|   |   |   |   kidslt6 = 0_1
+|   |   |   |   |   husby = 0_61
+|   |   |   |   |   |   kids618 = 0_2
+|   |   |   |   |   |   |   whrswk = 0_30: west (74.0/47.0)
+|   |   |   |   |   |   |   whrswk = 31_60: south (69.0/46.0)
+|   |   |   |   |   |   |   whrswk = 61_max: south (1.0)
+|   |   |   |   |   |   kids618 = 3_5: south (13.0/9.0)
+|   |   |   |   |   |   kids618 = 6_max: west (0.0)
+|   |   |   |   |   husby = 62_122: south (6.0/2.0)
+|   |   |   |   |   husby = 123_max: south (0.0)
+|   |   |   |   kidslt6 = 2_3: other (4.0)
+|   |   |   |   kidslt6 = 4_max: south (0.0)
+|   |   |   experience = 34_max: west (62.0/40.0)
+|   |   education = 9-11years
+|   |   |   whi = no
+|   |   |   |   hhi2 = no
+|   |   |   |   |   whrswk = 0_30
+|   |   |   |   |   |   kidslt6 = 0_1
+|   |   |   |   |   |   |   experience = 0_16: south (20.0/12.0)
+|   |   |   |   |   |   |   experience = 17_33: west (23.0/15.0)
+|   |   |   |   |   |   |   experience = 34_max: west (5.0/3.0)
+|   |   |   |   |   |   kidslt6 = 2_3
+|   |   |   |   |   |   |   experience = 0_16: west (19.0/10.0)
+|   |   |   |   |   |   |   experience = 17_33: south (3.0/1.0)
+|   |   |   |   |   |   |   experience = 34_max: west (0.0)
+|   |   |   |   |   |   kidslt6 = 4_max: west (1.0)
+|   |   |   |   |   whrswk = 31_60: west (22.0/11.0)
+|   |   |   |   |   whrswk = 61_max: west (0.0)
+|   |   |   |   hhi2 = yes: west (52.0/21.0)
+|   |   |   whi = yes: other (30.0/21.0)
+|   |   education = 16years
+|   |   |   kids618 = 0_2
+|   |   |   |   experience = 0_16
+|   |   |   |   |   kidslt6 = 0_1
+|   |   |   |   |   |   whrswk = 0_30: south (14.0/9.0)
+|   |   |   |   |   |   whrswk = 31_60
+|   |   |   |   |   |   |   whi = no: south (11.0/6.0)
+|   |   |   |   |   |   |   whi = yes: other (25.0/16.0)
+|   |   |   |   |   |   whrswk = 61_max: south (0.0)
+|   |   |   |   |   kidslt6 = 2_3: south (9.0/4.0)
+|   |   |   |   |   kidslt6 = 4_max: south (0.0)
+|   |   |   |   experience = 17_33: south (26.0/15.0)
+|   |   |   |   experience = 34_max: south (5.0/2.0)
+|   |   |   kids618 = 3_5: west (3.0/1.0)
+|   |   |   kids618 = 6_max: south (0.0)
+|   |   education = >16years: other (42.0/28.0)
+|   |   education = <9years: west (383.0/180.0)
+race = black
+|   hispanic = no
+|   |   kidslt6 = 0_1
+|   |   |   hhi = no: south (523.0/199.0)
+|   |   |   hhi = yes
+|   |   |   |   education = 13-15years: south (121.0/68.0)
+|   |   |   |   education = 12years: south (136.0/63.0)
+|   |   |   |   education = 9-11years: south (34.0/14.0)
+|   |   |   |   education = 16years: south (50.0/29.0)
+|   |   |   |   education = >16years
+|   |   |   |   |   whrswk = 0_30: northcentral (3.0/2.0)
+|   |   |   |   |   whrswk = 31_60: south (19.0/8.0)
+|   |   |   |   |   whrswk = 61_max: south (0.0)
+|   |   |   |   education = <9years: south (7.0)
+|   |   kidslt6 = 2_3
+|   |   |   education = 13-15years
+|   |   |   |   whi = no: south (15.0/8.0)
+|   |   |   |   whi = yes
+|   |   |   |   |   whrswk = 0_30: other (2.0)
+|   |   |   |   |   whrswk = 31_60
+|   |   |   |   |   |   hhi = no: south (3.0)
+|   |   |   |   |   |   hhi = yes: other (5.0/3.0)
+|   |   |   |   |   whrswk = 61_max: south (0.0)
+|   |   |   education = 12years: south (27.0/12.0)
+|   |   |   education = 9-11years: south (10.0/5.0)
+|   |   |   education = 16years: south (7.0/1.0)
+|   |   |   education = >16years: south (0.0)
+|   |   |   education = <9years: south (0.0)
+|   |   kidslt6 = 4_max: northcentral (4.0/1.0)
+|   hispanic = yes: other (32.0/9.0)
+race = other
+|   kids618 = 0_2
+|   |   whrswk = 0_30: west (55.0/28.0)
+|   |   whrswk = 31_60
+|   |   |   hhi = no
+|   |   |   |   education = 13-15years: west (11.0/6.0)
+|   |   |   |   education = 12years: south (28.0/13.0)
+|   |   |   |   education = 9-11years
+|   |   |   |   |   whi = no: northcentral (2.0/1.0)
+|   |   |   |   |   whi = yes: south (3.0/1.0)
+|   |   |   |   education = 16years: west (5.0/2.0)
+|   |   |   |   education = >16years: south (2.0/1.0)
+|   |   |   |   education = <9years: south (1.0)
+|   |   |   hhi = yes
+|   |   |   |   kidslt6 = 0_1
+|   |   |   |   |   experience = 0_16: other (2.0/1.0)
+|   |   |   |   |   experience = 17_33
+|   |   |   |   |   |   education = 13-15years: south (3.0/1.0)
+|   |   |   |   |   |   education = 12years: other (4.0/2.0)
+|   |   |   |   |   |   education = 9-11years: west (0.0)
+|   |   |   |   |   |   education = 16years: west (0.0)
+|   |   |   |   |   |   education = >16years: west (0.0)
+|   |   |   |   |   |   education = <9years: west (0.0)
+|   |   |   |   |   experience = 34_max: south (1.0)
+|   |   |   |   kidslt6 = 2_3: west (3.0/1.0)
+|   |   |   |   kidslt6 = 4_max: west (0.0)
+|   |   whrswk = 61_max: northcentral (1.0)
+|   kids618 = 3_5
+|   |   education = 13-15years: northcentral (8.0/4.0)
+|   |   education = 12years: west (8.0/3.0)
+|   |   education = 9-11years: northcentral (6.0/4.0)
+|   |   education = 16years: west (0.0)
+|   |   education = >16years: south (1.0)
+|   |   education = <9years: west (1.0)
+|   kids618 = 6_max: west (0.0)
+
+Number of Leaves  : 	274
+
+Size of the tree : 	415
+
+
+Time taken to build model: 0.11 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.12 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7329               36.5627 %
+Incorrectly Classified Instances     12716               63.4373 %
+Kappa statistic                          0.1384
+Mean absolute error                      0.357 
+Root mean squared error                  0.4228
+Relative absolute error                 95.7329 %
+Root relative squared error             97.9089 %
+Total Number of Instances            20045     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.328    0.216    0.322      0.328    0.325      0.111    0.609     0.311     northcentral
+                 0.224    0.125    0.346      0.224    0.272      0.118    0.614     0.316     other
+                 0.544    0.375    0.390      0.544    0.455      0.158    0.624     0.429     south
+                 0.306    0.146    0.383      0.306    0.340      0.174    0.639     0.356     west
+Weighted Avg.    0.366    0.228    0.362      0.366    0.356      0.141    0.622     0.358     
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+ 1568  627 1943  645 |    a = northcentral
+ 1181 1023 1629  724 |    b = other
+ 1209  693 3338  891 |    c = south
+  911  616 1647 1400 |    d = west
+

@@ -1,0 +1,69 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 3 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     HI-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R1-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R8-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R9-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R10-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R11-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R13-precision6-weka.filters.unsupervised.attribute.Remove-R13
+Instances:    22272
+Attributes:   12
+              whrswk
+              hhi
+              whi
+              hhi2
+              education
+              race
+              hispanic
+              experience
+              kidslt6
+              kids618
+              husby
+              region
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 5
+Within cluster sum of squared errors: 60112.0
+
+Initial starting points (random):
+
+Cluster 0: 31_60,no,yes,yes,>16years,white,no,34_max,0_1,0_2,0_61,other
+Cluster 1: 0_30,no,no,no,12years,white,yes,34_max,0_1,0_2,0_61,south
+Cluster 2: 31_60,yes,yes,yes,>16years,white,no,17_33,0_1,0_2,62_122,other
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                 Cluster#
+Attribute          Full Data            0            1            2
+                   (22272.0)     (8057.0)     (4508.0)     (9707.0)
+===================================================================
+whrswk                 31_60        31_60         0_30         0_30
+hhi                       no           no           no          yes
+whi                       no          yes           no           no
+hhi2                     yes           no           no          yes
+education            12years      12years      12years      12years
+race                   white        white        white        white
+hispanic                  no           no           no           no
+experience             17_33         0_16        17_33        17_33
+kidslt6                  0_1          0_1          0_1          0_1
+kids618                  0_2          0_2          0_2          0_2
+husby                   0_61         0_61         0_61         0_61
+region                 south        south        south northcentral
+
+
+
+
+Time taken to build model (full training data) : 0.11 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       8057 ( 36%)
+1       4508 ( 20%)
+2       9707 ( 44%)
+

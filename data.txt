@@ -1,0 +1,26 @@
+1) J48 use trainingSet then supply testingSet
+
+batch size 100 constant, reducederrorpruning true/FALSE, saveinstancedata true
+
+1. conf lvl 0.25, numFolds=3, seed=1
+2. conf lvl 0.50, numFolds=6, seed=2
+3. conf lvl 0.90, numFolds=9, seed=3	results: different
+
+2) AR use dataset
+
+outputitemssets True
+
+1. minMetric 0.7
+2. minMetric 0.8
+3. minMetric 0.9		results: same
+
+3) MLP - GUI true
+use trainingSet then supply testingSet classify>functions>MultilayerPerceptron
+
+4) REPTree
+use trainingSet then supply testingSet
+classify>trees>REPTree
+
+1. numFolds 3, seed 1
+2. numFolds 6, seed 2
+3. numFolds 9, seed 3		results: different

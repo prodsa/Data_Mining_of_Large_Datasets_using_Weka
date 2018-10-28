@@ -1,0 +1,148 @@
+=== Run information ===
+
+Scheme:
+	LinearRegression -S 0 -R 1.0E-8 -num-decimal-places 4
+
+Lagged and derived variable options:
+	-F Homicide -L 1 -M 5 -G Year
+
+Relation:     deaths-from-homicides-and-suicid
+Instances:    90
+Attributes:   3
+              Year
+              Homicide
+              Suicide
+
+Transformed training data:
+
+              Year
+              Homicide
+              Lag_Homicide-1
+              Lag_Homicide-2
+              Lag_Homicide-3
+              Lag_Homicide-4
+              Lag_Homicide-5
+              Year^2
+              Year^3
+              Year*Lag_Homicide-1
+              Year*Lag_Homicide-2
+              Year*Lag_Homicide-3
+              Year*Lag_Homicide-4
+              Year*Lag_Homicide-5
+
+Homicide:
+
+Linear Regression Model
+
+Homicide =
+
+      0.421  * Lag_Homicide-1 +
+      0.1778 * Lag_Homicide-2 +
+      0.2189 * Lag_Homicide-4 +
+      0.0826
+
+=== Future predictions from end of training data ===
+inst#      Homicide 
+1915           0.52 
+1916           0.42 
+1917           0.43 
+1918           0.48 
+1919           0.83 
+1920           0.62 
+1921           0.37 
+1922           0.43 
+1923           0.28 
+1924           0.46 
+1925           0.27 
+1926           0.58 
+1927           0.57 
+1928           0.51 
+1929           0.75 
+1930           0.68 
+1931           0.77 
+1932           0.46 
+1933            0.5 
+1934           0.42 
+1935           0.61 
+1936           0.46 
+1937           0.57 
+1938           0.35 
+1939           0.39 
+1940           0.58 
+1941           0.24 
+1942           0.24 
+1943           0.26 
+1944           0.42 
+1945           0.37 
+1946           0.38 
+1947           0.41 
+1948           0.39 
+1949           0.24 
+1950           0.16 
+1951           0.44 
+1952           0.51 
+1953           0.37 
+1954           0.43 
+1955           0.41 
+1956           0.33 
+1957           0.52 
+1958           0.55 
+1959           0.55 
+1960            0.5 
+1961           0.53 
+1962            0.6 
+1963           0.56 
+1964           0.57 
+1965            0.5 
+1966           0.54 
+1967           0.56 
+1968           0.69 
+1969           0.44 
+1970           0.57 
+1971            0.6 
+1972           0.47 
+1973           0.59 
+1974            0.6 
+1975           0.63 
+1976           0.61 
+1977            0.7 
+1978           0.48 
+1979            0.7 
+1980            0.7 
+1981            0.6 
+1982            0.7 
+1983            0.6 
+1984            0.8 
+1985            0.6 
+1986            0.6 
+1987            0.6 
+1988            0.7 
+1989            0.5 
+1990            0.5 
+1991            0.5 
+1992            0.6 
+1993           0.33 
+1994           0.27 
+1995           0.32 
+1996           0.54 
+1997           0.41 
+1998           0.29 
+1999           0.33 
+2000           0.31 
+2001           0.26 
+2002           0.21 
+2003           0.19 
+2004           0.16 
+2005*        0.2407 
+2006*        0.2584 
+
+=== Evaluation on training data ===
+Target                      1-step-ahead  2-steps-ahead
+=======================================================
+Homicide
+  N                                   85             84
+  Mean absolute error             0.0936         0.1015
+  Root mean squared error         0.1129         0.1219
+
+Total number of instances: 90
+
